@@ -1,0 +1,11 @@
+body{
+  background: linear-gradient(45deg, rgb(254, 164, 67), rgb(249, 121, 109));
+}
+h1{
+    color:aliceblue;
+    text-align:center;
+}
+
+p{
+    text-align:center;
+}
