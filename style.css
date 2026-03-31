@@ -41,7 +41,7 @@ scroll-padding-top: 3rem;
 }
 /*created box to put the content in like questions and answers*/
 div {
-    width: 70%;
+    width: 60%;
     background: rgb(255, 227, 215);
     border: 0;
     border-radius: 10px;
