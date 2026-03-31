@@ -7,10 +7,7 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
-html {
-color-scheme: dark light; /* Default dark */
-hanging-punctuation: first last; /* Not supported in Chrome */
-}
+
 body {
 min-height: 100vh;
 }
