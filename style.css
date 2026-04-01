@@ -1,3 +1,8 @@
+/*
+* Kevin Powell
+* https://youtu.be/cCAtD_BAHNw
+*/
+
 *,
 *::before,
 *::after {
@@ -8,6 +13,10 @@ margin: 0;
 padding: 0;
 }
 
+html {
+color-scheme: dark light; /* Default dark */
+hanging-punctuation: first last; /* Not supported in Chrome */
+}
 body {
 min-height: 100vh;
 }
@@ -15,20 +24,26 @@ min-height: 100vh;
 img,picture,svg,video {
 display: block;
 max-width: 100%;
+box-sizing: border-box; /* This makes layout easier and ensures that padding is included in the total picture's width */
 }
 
 h1,h2 {
-/*text-wrap: balance;*/
-padding-bottom: 1rem; /*to distinguish the question and the answer section*/
+text-wrap: balance; /* To prevent orphans on line*/
+padding-bottom: 1rem; /* To distinguish the question and the answer section*/
 }
 
 h2{
-    color:#4e5980; /*change the question color*/
+    color:#4e5980; /* Change the question color to make it lighter for easier to read*/
     font-size: 3.5ch;
 }
 
+li {
+    font-size: 20px; /* To adjust the font-size inside*/
+    margin-left: 40px; /* To indent the bullet point and I think it look more balance to watch */
+}
+
 p {
-font-size: 1.5rem;
+font-size: 20px;
 max-width: 75ch;
 text-wrap: pretty; /* Prevents orphans on lines */
 }
@@ -42,27 +57,39 @@ scroll-padding-top: 3rem;
 /*created box to put the content in like questions and answers*/
 div {
     width: 60%;
-    background: rgb(255, 227, 215);
+    background: rgb(255, 227, 215); /*add background color to the box */
     border: 0;
     border-radius: 10px;
     padding: 35px;
-    margin: 20px auto; /*make it stay in the middle*/
+    margin: 20px auto; /*make sure the box stay in the middle of the page*/
     color:#2f4858; /*change the input text color*/
 }
 
-/*created a title box and change the background color to make it different among the content box*/
+/*created a title box and changed the background color to make it different from the content box*/
 #container1{
-    width: 70%;
-    background:linear-gradient(45deg, rgb(78, 89, 128), rgb(47, 72, 88));
-    border: 0;
-    padding: 35px;
-    margin: 20px auto;
+    width: 100%; /* To make the title block clearer and to prevent the structure from resembling response blocks */
+    height: 200px;
+    background:linear-gradient(60deg, rgb(78, 89, 128), rgb(47, 72, 88));
+    border-radius:0;
     color: aliceblue;
     text-align: center;
     font-family: copperplate; /*change the text-font of the title*/
+    /*to get all the text in the center of the box*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
+  /*Because I wanted to place the side-by-side image in the middle of the text paragraphs, I created a new class.*/
+.images-container {
+  display: flex; /* Use flexbox to align two pictures side by side */
+  justify-content: center; /* To display two pictures in the middle of the box*/
+  gap: 20px; /* Adds space between two pictures*/
+}
+
+/* Change the background color of the website, I find the color is used in the beginning of the web that I reviewed, so I want to use that color to show some relevance to the website*/
 body{
-  background: linear-gradient(45deg, rgb(254, 164, 67), rgb(249, 121, 109));
+  background: linear-gradient(60deg, rgb(254, 164, 67), rgb(249, 121, 109));
 }
 
