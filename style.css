@@ -28,7 +28,6 @@ box-sizing: border-box; /* This makes layout easier and ensures that padding is 
 }
 
 h1,h2 {
-/*text-wrap: balance;*/ /* To prevent orphans on line*/
 padding-bottom: 1rem; /* To distinguish the question and the answer section*/
 }
 
